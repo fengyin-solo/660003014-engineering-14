@@ -58,10 +58,13 @@ jspm_packages/
 
 # =========================
 # Lock files
-# =========================
-package-lock.json
+# -------------------------
+# package-lock.json 是本项目唯一的依赖清单，必须随仓库共享，不忽略
 yarn.lock
 pnpm-lock.yaml
+
+# 本地依赖核对/安装结果记录（由 scripts/deps.sh 生成，重启可查，不入库）
+.deps/
 
 # =========================
 # Build / Cache / Output

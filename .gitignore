@@ -58,10 +58,14 @@ jspm_packages/
 
 # =========================
 # Lock files
+# 本项目固定使用 npm：package-lock.json 是开发与构建共用的唯一版本清单，
+# 必须随仓库提交，不能忽略；其他包管理器的锁文件禁止入库。
 # =========================
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
+
+# 本机依赖核对/安装记录（scripts/deps-sync.js 生成，重启后本地可查）
+.deps/
 
 # =========================
 # Build / Cache / Output
